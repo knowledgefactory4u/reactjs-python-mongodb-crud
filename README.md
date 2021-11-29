@@ -14,3 +14,4 @@ Your application server will run locally at http://localhost:5000
 
 **npm start**
 
+Your application will run locally at http://localhost:3000
