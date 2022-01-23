@@ -25,8 +25,12 @@ class ListUserComponent extends Component {
         this.props.history.push(`/add-user/${id}`);
     }
 
-    componentDidMount(){
+   componentDidMount(){
         UserService.getUsers().then((res) => {
+            if(res.data==null)
+            {
+                this.props.history.push('/add-user/_add');
+            }
             this.setState({ users: res.data});
         });
     }
