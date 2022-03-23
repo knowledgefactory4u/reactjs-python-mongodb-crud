@@ -2,6 +2,10 @@
 
 <h1>Run the backend application</h1>
 
+Install the dependencies using below command
+
+**pip install flask flask_cors pymongo**
+
 Run the server file using the following command. Make sure your MongoDB server is still running : 
 
 **$ python3 app.py**
